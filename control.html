@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control E-commerce</title>
+    <!-- css file  -->
+    <link rel="stylesheet" href="Css/control.css">
+     <!-- font awsome file  -->
+     <link rel="stylesheet" href="Css/all.min.css">
+     <!-- goole font  -->
+</head>
+<body>
+    <section class="title">
+        <h1>CRUDS</h1>
+        <P>PRODUCT MANGEMENT SYSTEM</P>
+    </section>
+
+    <section class="creat">
+        <input type="text" placeholder="Title" id="title">
+        <div class="price">
+            <input onkeyup="getTotal()" type="number" placeholder="Price"  id="price">
+             <P class="total" id="total">Total: <span id="totales"></span></P>
+        </div>
+        
+ 
+
+        <input type="number" placeholder="Count" id="countes"  >
+
+        <input type="text" placeholder="Category" id="category">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Describtion For Product"></textarea>
+
+        <section class="addIMages">
+            <div class="imgMain">
+                 <img class="imgMainAdd" src="" alt="">
+                <button  onclick="collectImg(this)" >Add Image</button>
+                <div class="alert">
+                    <i><i class="fa-solid fa-xmark"></i></i>
+                    <input  class="url" type="url" name="" id="" placeholder="Enter Url For Image">
+                    <button>Submit</button>
+                </div>
+            </div>
+            <div class="imgOne">
+                <img class="imgOneAdd" src="" alt="">
+                <button  onclick="collectImg(this)" >Add Image</button>
+                <div class="alert">
+                    <i><i class="fa-solid fa-xmark"></i></i>
+                    <input  class="url" type="url" name="" id="" placeholder="Enter Url For Image">
+                    <button>Submit</button>
+                </div>
+            </div>
+            <div class="imgTwo">
+                <img class="imgTwoAdd" src="" alt="">
+                <button  onclick="collectImg(this)" >Add Image</button>
+                <div class="alert">
+                    <i><i class="fa-solid fa-xmark"></i></i>
+                    <input  class="url" type="url" name="" id="" placeholder="Enter Url For Image">
+                    <button>Submit</button>
+                </div>
+            </div>
+            <div class="imgThree">
+                <img  class="imgThreeAdd" src="" alt="">
+                <button  onclick="collectImg(this)" >Add Image</button>
+                <div class="alert">
+                    <i><i class="fa-solid fa-xmark"></i></i>
+                    <input  class="url" type="url" name="" id="" placeholder="Enter Url For Image">
+                    <button>Submit</button>
+                </div>
+            </div>
+        </section>
+
+        <button id="submit">Create</button>
+        <input type="text" placeholder="Search" onkeyup="searchData(this.value)" id="searches"> 
+        <div class="search">
+            <button onclick="getSearchMood(this.id)"  id="searchTitle" >Searh</button>
+        </div>
+         
+        <div id="deletAll"></div>
+    </section>
+  
+    <section class="table">
+        <table border="0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>IMAGE</th>
+                    <th>PRICE</th>
+                    <th>COUNT</th>
+                    <th>CATEGROY</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+            </thead>
+       
+
+
+            <tbody id="tbody">
+                <!-- <tr>
+                    <th>1</th>
+                    <th>i Phone</th>
+                    <th><img src="" alt=""></th>
+                    <th>324</th>
+                    <th>3</th>
+                    <th>Phone</th>
+                    <th><button>Update</button></th>
+                    <th><button>Delete</button></th>
+                </tr>   -->
+                
+         
+            </tbody>
+          
+        </table>
+    </section>
+
+    <!-- java scritp file -->
+    <script src="java script/control.js"></script>
+</body>
+</html>
